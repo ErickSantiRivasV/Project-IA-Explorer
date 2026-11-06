@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow | Mis tareas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/app.js') }}" defer></script>
+</head>
+<body>
+    <main class="container">
+        <header class="hero">
+            <p class="eyebrow">ORGANIZA TU DÍA</p>
+            <h1>TaskFlow</h1>
+            <p class="subtitle">Un lugar sencillo para mantener tus tareas en orden.</p>
+        </header>
+        <section class="task-panel" aria-labelledby="task-heading">
+            <h2 id="task-heading">Mis tareas</h2>
+            <form id="task-form">
+                <label class="visually-hidden" for="task-title">Nueva tarea</label>
+                <input id="task-title" name="title" maxlength="120" placeholder="¿Qué necesitas hacer?" required>
+                <button type="submit">Agregar</button>
+            </form>
+            <p id="feedback" role="status" aria-live="polite"></p>
+            <ul id="task-list" class="task-list"></ul>
+            <p id="empty-state" class="empty-state">Todavía no tienes tareas. Agrega la primera.</p>
+        </section>
+        <footer>TaskFlow Demo · Python + Flask + SQLite</footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,9 @@
+[project]
+name = "taskflow-demo"
+version = "1.0.0"
+description = "Aplicación web sencilla para administrar tareas"
+requires-python = ">=3.10"
+dependencies = ["Flask>=3.0,<4.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
