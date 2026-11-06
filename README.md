@@ -1,4 +1,4 @@
-# Project AI Exporter — Etapa 8
+# Project AI Exporter
 # HECHO CON IA!
 Aplicación de escritorio en Python y Tkinter para explorar proyectos, seleccionar archivos, analizar su estructura, extraer su contenido y preparar paquetes para compartir con herramientas de IA.
 
